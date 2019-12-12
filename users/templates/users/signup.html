@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block container %}
+<div class="container" style="width: 30rem;">
+  
+  <form method="POST"><br>
+      {% csrf_token %}
+      <fieldset class="form-group">
+          {{ form|crispy }}
+        <button class="btn btn-primary" type="submit">Créer</button>
+  </form>
+      <small class="text-muted">
+          Vous avez deja un compte? <a class="ml-2" href="{% url 'login' %}">Se connecter</a>
+      </small>
+    </fieldset>
+</div>
+
+{% endblock container %}

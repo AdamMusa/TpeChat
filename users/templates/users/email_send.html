@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block container %}
+<div class="card">
+    <div class="card-header">
+        Send Email
+    </div>
+    <div class="card-body">
+        <p class="">
+            Un email automatique de confirmation vient de vous être envoyé à l'adresse <p
+                class="text-primary m-0 text-muted">{{user}}</p> <br>
+            L'adresse est elle incorrecte ? alors corrigez-la en cliquant sur le lien suivant <a class="text-primary"
+                href="{% url 'signup' %}">changer d'adresse</a> <br>
+            Vous ne retrouvez pas votre email de confirmation ?
+            Merci de verifier si vous ne l'avez pas réçu parmis vos courriers "indésirables" ou "spam" <br>
+        </p>
+
+        <h4 class="my-3">Merci de votre confiance ! </h4>
+        <a href="{% url 'home' %}" class="btn btn-primary">accueil</a>
+    </div>
+</div>
+{% endblock container %}
