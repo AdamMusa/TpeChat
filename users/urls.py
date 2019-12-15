@@ -1,10 +1,11 @@
 from django.urls import path
-from users.views import signup,activate_account,profile_solde,change_password,email_send,active_link
+from users.views import signup,activate_account,profile_solde,change_password,email_send,active_link,about
 from django.contrib.auth import views as auth_views
 
 
 urlpatterns = [
 
+    path('about/',about,name='about'),
     path('email/',email_send,name='email'),
     path('link/',active_link,name='link'),
     path('solde/',profile_solde,name='solde'),

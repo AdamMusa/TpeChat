@@ -14,6 +14,7 @@ from django.contrib.auth.models import User
 from django.core.mail import EmailMessage
 from users.models import Profile
 from django.contrib.auth.decorators import login_required
+import json
 
 def signup(request):
     if request.user.is_authenticated:
@@ -94,3 +95,6 @@ def email_send(request):
 #l'invalidation de lien d'activation 
 def active_link(request):
     return render(request,'users/active_link.html')
+
+def about(request):
+    return render(request,'users/about.html')
