@@ -38,7 +38,7 @@ netifaces==0.10.4
 oauth==1.0.1
 olefile==0.45.1
 pexpect==4.2.1
-Pillow==6.2.1
+Pillow==9.0.0
 protobuf==3.0.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.7
