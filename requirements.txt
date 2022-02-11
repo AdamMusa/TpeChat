@@ -69,7 +69,7 @@ six==1.13.0
 sqlparse==0.3.0
 system-service==0.3
 systemd-python==234
-Twisted==19.10.0
+Twisted==22.1.0
 txaio==18.8.1
 ubuntu-drivers-common==0.0.0
 ufw==0.36
